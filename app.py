@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-model = joblib.load('../models/heart_disease_rf_model.pkl')
+model = joblib.load('heart_disease_rf_model.pkl')
 
 features = ['age', 'sex', 'chest pain type', 'resting bp s', 'cholesterol',
             'fasting blood sugar', 'resting ecg', 'max heart rate',
